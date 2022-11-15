@@ -14,7 +14,7 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
-    Timer(Duration(seconds: 3), () => Get.to(() => HomeView()));
+    Timer(Duration(seconds: 3), () => Get.off(() => HomeView()));
     super.initState();
   }
 
@@ -23,13 +23,14 @@ class _SplashPageState extends State<SplashPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
-          child: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/icon/j5posicon.png'),
+        child: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/icon/j5posicon.png'),
+            ),
           ),
         ),
-      )),
+      ),
     );
   }
 }

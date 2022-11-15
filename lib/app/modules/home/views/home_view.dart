@@ -113,7 +113,7 @@ class HomeView extends GetView<HomeController> {
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: ElevatedButton(
                           onPressed: () {
-                            Get.to(HomeappView());
+                            Get.offAll(HomeappView());
                             // Get.toNamed(Routes.HOMEAPP);
                           },
                           child: Center(
